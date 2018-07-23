@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh './dev.sh'
             }
         }
         stage('Build Image') {
